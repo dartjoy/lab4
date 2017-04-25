@@ -1,0 +1,52 @@
+（1.）
+0000000000601048 B __bss_start
+0000000000601048 b completed.7585
+                 U __cxa_atexit@@GLIBC_2.2.5
+0000000000601038 D __data_start
+0000000000601038 W data_start
+00000000004005f0 t deregister_tm_clones
+0000000000400670 t __do_global_dtors_aux
+0000000000600e08 t __do_global_dtors_aux_fini_array_entry
+0000000000601040 D __dso_handle
+0000000000600e18 d _DYNAMIC
+0000000000601048 D _edata
+0000000000601050 B _end
+00000000004007e4 T _fini
+0000000000400690 t frame_dummy
+0000000000600df8 t __frame_dummy_init_array_entry
+00000000004009c8 r __FRAME_END__
+0000000000601000 d _GLOBAL_OFFSET_TABLE_
+0000000000400759 t _GLOBAL__sub_I__Z7averagePdRd
+                 w __gmon_start__
+0000000000400804 r __GNU_EH_FRAME_HDR
+0000000000400540 T _init
+0000000000600e08 t __init_array_end
+0000000000600df8 t __init_array_start
+00000000004007f0 R _IO_stdin_used
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+0000000000600e10 d __JCR_END__
+0000000000600e10 d __JCR_LIST__
+                 w _Jv_RegisterClasses
+00000000004007e0 T __libc_csu_fini
+0000000000400770 T __libc_csu_init
+                 U __libc_start_main@@GLIBC_2.2.5
+0000000000400710 T main
+0000000000400630 t register_tm_clones
+00000000004005c0 T _start
+0000000000601048 D __TMC_END__
+000000000040071b t _Z41__static_initialization_and_destruction_0ii
+00000000004006e4 T _Z7averageif
+00000000004006b6 T _Z7averagePdRd
+                 U _ZNSt8ios_base4InitC1Ev@@GLIBCXX_3.4
+                 U _ZNSt8ios_base4InitD1Ev@@GLIBCXX_3.4
+0000000000601049 b _ZStL8__ioinit
+
+
+（2.）
+1 8
+4 8
+4 8
+8 8
+第一行為各type的size
+第二行則是代表address的size 因宣告成pointer但code裡的sizeof是取其位置 而在64位元的電腦上皆為8
